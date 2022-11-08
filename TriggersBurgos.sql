@@ -39,6 +39,17 @@ VALUES(NEW.NOMBRE,
 END//
 DELIMITER ;
 
+INSERT INTO PRODUCTOS (ID_CATEGORIA, NOMBRE, ID_MARCA, DESCRIPCION, STOCK, IMAGEN, PRECIO)
+VALUES
+('1',
+'Avengers #48 (Variant) BIS',
+'1',
+'`WORLD WAR SHE-HULK` Continues! After being taken prisoner by the Russian Winter Guard and sent to the notorious assassin-training academy known as the Red Room, She-Hulk has been transformed into something terrifying. And now the Winter Hulk has been unleashed upon the world. And the only one who can stop her…is Gorilla-Man?',
+'10',
+'https://i.annihil.us/u/prod/marvel/i/mg/c/10/612d39fef0ac2/clean.jpg',
+8000
+)
+
 DELIMITER //
 CREATE TRIGGER TRG_LOG_PRODUCTOS1 
 BEFORE UPDATE ON PRODUCTOS
@@ -75,6 +86,8 @@ NOW());
 END//
 DELIMITER ;
 
+UPDATE PRODUCTOS
+
 DELIMITER //
 CREATE TRIGGER TRG_LOG_USUARIOS
 AFTER INSERT ON USUARIOS
@@ -95,6 +108,10 @@ VALUES(NEW.NOMBRE,
 
 END//
 DELIMITER ;
+
+INSERT INTO USUARIOS (EMAIL ,NOMBRE, APELLIDO, DOMICILIO, PASSWORD, ALIAS, CELULAR, DNI)
+VALUES
+('pablito@mail.com','Pablito','Burgos','Calle falsa 123','password123','pburgos','1501020304','10000000');
 
 DELIMITER //
 CREATE TRIGGER TRG_LOG_USUARIOS1 
