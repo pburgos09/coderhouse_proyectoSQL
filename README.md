@@ -4,14 +4,15 @@ Proyecto de SQL de Coderhouse
 Descripción de la base de datos
 
 Crear una base de datos de un e-commerce, donde se almacene los productos que se van a vender, como así también almacenar usuarios, que se van a registrar con sus datos y van a acceder a sus favoritos, sus ordenes de compra y ver su carrito de compras mediante una contraseña. A su vez van a poder dejar tanto reseñas como calificaciones a dichos productos. La idea es ampliar las tablas para abarcar todos estos aspectos.
+Agregué 3 tablas mas de marcas, categorias y reseñas, faltaria agregar datos en la tabla reseñas,que esta en proceso.
 
-El archivo DER_SQL.drawio.drawio.pdf contiene el diagrama de entidad-relacion.
+El archivo DER_SQL2.1drawio.pdf contiene el diagrama de entidad-relacion.
 
 La creacion de las tablas se hace con el script diagramaBurgos.sql.
 
 La insercion de datos se hace con el script ScriptInsBurgos.sql
 
-Las views de esta base de datos estan en el script ScriptVisBurgos.sql
+Las views de esta base de datos estan en el script ScriptVisBurgos.sql. La primer vista "favoritos" me muestra todos los favoritos por usuario. La segunda vista "comics" me muestra todos los productos con categoria de comics. La tercera "manga" me muestra todos los productos con categoria manga. La cuarta vista "compras_procesadas" me muestra todas las ordenes de pago con estado de compra "procesado". la quinta vista "productos_800up" me muestra todos los productos con un precio por encima de 800.
 
 La funciones estan en el script FormatoBurgos.sql, la primer funcion "CANTIDAD_FAVORITOS_USUARIOS" me da como resultado la cantidad total de favoritos del usuario que se pase como parametro. La segunda funcion "TOTAL_CARRITO_COMPRAS" me da como resultado el total de gasto sumando todo los carritos del usuario que se pase como parametro.
 
