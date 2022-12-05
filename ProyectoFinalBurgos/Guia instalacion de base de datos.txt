@@ -1,0 +1,19 @@
+Para la creación de la base de datos E_COMMERCE, se debe seguir los pasos detallados a continuación:
+
+1 - Se ejecuta el archivo con nombre "1-CreacionTablas.sql" para la creación de las tablas de la base de datos.
+
+2- Se ejecuta el archivo con nombre "2-InsercionDatos.sql" para agregar los datos correspondientes a cada tabla en la base de datos.
+
+3 - Se ejecuta el archivo con nombre "3-Vistas.sql" para agregar las vistas.
+
+4 - Se ejecuta el archivo con nombre "4-Funciones" para agregar las funciones.
+
+5 - Se ejecuta el archivo con nombre "5-StoredProcedures.sql" para agregar los stored procedures.
+
+6 - Se ejecuta el archivo con nombre "6-Triggers.sql" para agregar los triggers.
+
+7 - Se ejecuta el archivo con nombre "7-Transactions.sql" para realizar las transacciones correspondientes.
+
+8 - Se ejecuta el archivo con nombre "8-Sentencias" para la creación de los 2 nuevos usuarios con sus respectivos permisos.
+
+9 - En caso de haber eliminado la base de datos, puede ejecutar el archivo con nombre "9-Backup" para poder recuperar la totalidad de la base de datos que incluye las vistas, funciones, triggers y stored procedures.
